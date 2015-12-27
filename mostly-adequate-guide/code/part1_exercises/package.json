@@ -9,10 +9,11 @@
     "ramda": "^0.13.0"
   },
   "devDependencies": {
-    "mocha": "^1.17.1"
+    "babel": "^5.8.34",
+    "mocha": "^2.3.4"
   },
   "scripts": {
-    "test": "mocha exercises/**/*_spec.js"
+    "test": "mocha --compilers js:babel/register exercises/**/*_spec.es6.js"
   },
   "repository": {
     "type": "git",
